@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Student Management System</h1>
+
+      <form id="studentForm">
+        <div class="form-grid">
+          <label for="name">
+            Name
+            <input type="text" id="name" name="name" />
+            <span class="error" id="nameError"></span>
+          </label>
+
+          <label for="email">
+            Email
+            <input type="email" id="email" name="email" />
+            <span class="error" id="emailError" ></span>
+          </label>
+
+          <label for="age">
+            Age
+            <input type="number" id="age" name="age" />
+            <span class="error" id="ageError" ></span>
+          </label>
+
+          <label for="department">
+            Department
+            <input type="text" id="department" name="department" />
+            <span class="error" id="departmentError"></span>
+          </label>
+
+          <label for="marks">
+            Marks
+            <input type="number" id="marks" name="marks" />
+            <span class="error" id="marksError"></span>
+          </label>
+        </div>
+
+        <button type="submit">Add Student</button>
+        <p id="formMessage"></p>
+        <p id="storageMessage"></p>
+      </form>
+
+      <section class="summary">
+        <p>Total marks: <strong id="totalMarks">0.00</strong></p>
+        <p>Average marks: <strong id="averageMarks">0.00</strong></p>
+      </section>
+
+      <label class="search" for="studentSearch">
+        Search
+        <input
+          type="search"
+          id="studentSearch"
+          name="studentSearch"
+          placeholder="Enter a name"
+        />
+      </label>
+
+      <div class="table-wrapper">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Age</th>
+              <th scope="col">Department</th>
+              <th scope="col">Marks</th>
+              <th scope="col">Grade</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

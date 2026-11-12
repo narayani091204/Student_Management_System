@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px 10px;
+  color: #1f2937;
+  background: #f3f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+button {
+  margin: 1px;
+  padding: 5px 8px;
+  color: #fff;
+  background: #1441a3;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.error {
+  min-height: 1px;
+  color: #b91c1c;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.summary p {
+  margin: 0;
+}
+
+.search {
+  max-width: 360px;
+  margin-bottom: 1rem;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+#dataTable th,
+#dataTable td {
+  padding: 12px 20px;
+  text-align: left;
+}
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 2px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f8fafc;
+}
